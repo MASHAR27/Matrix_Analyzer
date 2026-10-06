@@ -56,4 +56,20 @@ for  row in matrix:
     row_count +=1 
     
     
+print()
+
+print("Columns  wise: ")
+col_count = 0
+for col in range(col_numbers):
+    col_total = 0
+    for row_values in range(row_numbers):
+        val = matrix[row_values][col]
+        col_total += val
+        
+    print(f"The column total for column {col_count+1 } is :  {col_total}")
+    col_count+=1
+    
+    
+        
+    
     
