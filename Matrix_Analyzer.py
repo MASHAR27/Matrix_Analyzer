@@ -22,6 +22,10 @@ for row in matrix:
     
 
 print("Statistics time:  ")
+
+print()
+
+print("Matrix as a whole wise: ")
       
 total = 0
 largest = matrix[0][0]
@@ -38,3 +42,18 @@ for row in matrix:
         total += row_val
         
 print(f"For the whole matrix the largest value is {largest}, while the smallest value is {smallest} , the sum of all the values is {total} and the average of all the values is {total/count}")                         
+
+print()
+
+print("Rows wise: ")
+row_count = 0
+for  row in matrix:
+    row_total = 0
+    for values in row:
+        row_total += values
+            
+    print(f" For row {row_count+1}:  the total is {row_total}")  
+    row_count +=1 
+    
+    
+    
