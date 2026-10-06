@@ -20,6 +20,21 @@ for row in matrix:
     print()
     
     
+
+print("Statistics time:  ")
+      
+total = 0
+largest = matrix[0][0]
+smallest = matrix[0][0]   
+count = 0
+
+for row in matrix:
+    for row_val in row:
+        if row_val > largest:
+            largest = row_val
+        if row_val < smallest:
+            smallest = row_val
+        count+= 1
+        total += row_val
         
-        
-        
+print(f"For the whole matrix the largest value is {largest}, while the smallest value is {smallest} , the sum of all the values is {total} and the average of all the values is {total/count}")                         
